@@ -1,8 +1,12 @@
+const app  = express();
 const express = require('express');
 const {createServer} = require('http') //using for realtime it is require from browser
 const {Server} = require('socket.io')
-
-const app  = express();
+const cors = require('cors');
+const bodyParser = require('body-parser');
+app.use(cors());
+app.use(bodyParser.json())
+app.use(express.json())
 const httpServer = createServer(app);
 const io = new Server(httpServer,{
         cors: {
