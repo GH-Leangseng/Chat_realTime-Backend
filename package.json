@@ -4,7 +4,8 @@
   "description": "",
   "main": "Run/Server",
   "scripts": {
-    "dev": "nodemon Run/Server"
+    "dev": "nodemon Run/Server",
+    "start": "node Run/Server"
   },
   "keywords": [],
   "author": "",
